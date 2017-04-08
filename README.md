@@ -1,4 +1,4 @@
-# WebTech1 - Projekt
+# WebTech2 - Projekt
 
 autori:
 =======
