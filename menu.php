@@ -7,7 +7,7 @@
  */
 
 ?>
-<div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+<div class="navbar navbar-static-top navbar-inverse" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
