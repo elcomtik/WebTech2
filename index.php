@@ -7,7 +7,7 @@
  */
 
 include_once 'session.php';
-include_once 'head.php';
+include_once 'includes.php';
 ?>
 <body>
 <?php
