@@ -27,6 +27,6 @@ $lang = array(
     'electromobility' => "Elektromobilita",
     'contact' => "Kontakt",
     'login' => "Prihlásene",
-    'lang_sk' => "SK",
-    'lang_en' => "EN"
+    'lang_change' => "EN",
+    'lang_link' => "?lang=en"
 );

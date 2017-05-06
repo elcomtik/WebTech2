@@ -26,6 +26,6 @@ $lang = array(
     'electromobility' => "Electromobility",
     'contact' => "Contact",
     'login' => "Login",
-    'lang_sk' => "SK",
-    'lang_en' => "EN"
+    'lang_change' => "SK",
+    'lang_link' => "?lang=sk"
 );

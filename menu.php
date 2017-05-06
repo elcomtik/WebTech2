@@ -7,17 +7,6 @@
  */
 
 ?>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ustav</title>
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script rel="script" src="assets/jquery/jquery-3.2.1.min.js"></script>
-    <script rel="script" src="assets/js/menu.js"></script>
-    <script rel="script" src="assets/bootstrap/bootstrap/js/bootstrap.min.js"></script>
-</head>
-
 <div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -71,8 +60,7 @@
                 <li><a href="#"><?php echo $lang['contact']; ?></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php?lang=sk"><?php echo $lang['lang_sk']; ?></a></li>
-                <li><a href="index.php?lang=en"><?php echo $lang['lang_en']; ?></a></li>
+                <li><a href="<?php echo $lang['lang_link'] ?>"><?php echo $lang['lang_change']; ?></a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> <?php echo $lang['login']; ?></a></li>
             </ul>
         </div><!--/.nav-collapse -->
