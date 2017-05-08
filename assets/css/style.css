@@ -31,15 +31,38 @@ li > .dropdown-menu a {
     color: #9d9d9d;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+
+
+.container{
+    width:90%;
 }
 
-textarea {
-    position: absolute;
-    margin-left: 10%;
-    width: 80%;
-    heigt: 500px;
+.top5 {margin-top: 5%;}
+.top7 {margin-top: 7%;}
+.top10{margin-top: 10%;}
+.top15{margin-top: 15%;}
+.top17{margin-top: 17%;}
+.top30{margin-top: 30%;}
+
+.vertical-center {
+    text-align: justify;  /* align the inline(-block) elements horizontally */
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+
+}
+
+.vertical-center > .container {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif; /* <-- reset the font property */
+}
+
+.vertical-center .row {
+    align-items: center;
+    display: flex;
 }
