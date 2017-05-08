@@ -30,3 +30,39 @@ li > .dropdown-menu {
 li > .dropdown-menu a {
     color: #9d9d9d;
 }
+
+
+
+.container{
+    width:90%;
+}
+
+.top5 {margin-top: 5%;}
+.top7 {margin-top: 7%;}
+.top10{margin-top: 10%;}
+.top15{margin-top: 15%;}
+.top17{margin-top: 17%;}
+.top30{margin-top: 30%;}
+
+.vertical-center {
+    text-align: justify;  /* align the inline(-block) elements horizontally */
+}
+
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+
+}
+
+.vertical-center > .container {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif; /* <-- reset the font property */
+}
+
+.vertical-center .row {
+    align-items: center;
+    display: flex;
+}
