@@ -28,5 +28,9 @@ $lang = array(
     'contact' => "Kontakt",
     'login' => "Prihlásene",
     'lang_change' => "EN",
-    'lang_link' => "?lang=en"
+    'lang_link' => "?lang=en",
+    'username' => "Prihlasovacie meno",
+    'pass' => "Heslo",
+    'login_button' => "Prihlásiť",
+    'logout' => "Odhlásenie"
 );

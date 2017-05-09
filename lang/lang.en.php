@@ -27,5 +27,9 @@ $lang = array(
     'contact' => "Contact",
     'login' => "Login",
     'lang_change' => "SK",
-    'lang_link' => "?lang=sk"
+    'lang_link' => "?lang=sk",
+    'username' => "Username",
+    'pass' => "Password",
+    'login_button' => "Log in",
+    'logout' => "Log out"
 );
