@@ -23,14 +23,16 @@ if (isset($_SESSION['login_user'])) {
 <?php
 include_once 'menu.php';
 $error = '';
+
+function exception_error_handler($errno, $errstr, $errfile, $errline)
+{
+    throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
+}
+
 if (isset($_POST['submit'])) {
     if (empty($_POST['username'] || $_POST['pass'])) {
-        if ($_SESSION['lang'] === 'sk') {
-            $error = 'Nesprávne prihlasovacie meno alebo heslo';
-        }
-        else {
-            $error = 'Username or Password is invalid';
-        }
+        $error = 'Nesprávne prihlasovacie meno alebo heslo';
+
     }
     else {
 
@@ -55,37 +57,25 @@ if (isset($_POST['submit'])) {
             $row = $result->fetch_assoc();
 
             if (!($ldap_conn = ldap_connect($ldap_config['host'], $ldap_config['port']))) {
-                if ($_SESSION['lang'] === 'sk') {
-                    $error = 'Nedokážeme kontaktovať LDAP';
-                }
-                else {
-                    $error = 'We can\'t contact LDAP';
-                }
+                $error = 'Nedokážeme kontaktovať LDAP';
+
             }
 
             ldap_set_option($ldap_conn, LDAP_OPT_PROTOCOL_VERSION, 3);
-            $bind = ldap_bind($ldap_conn, $ldaprdn, $pass);
-            if ($bind) {
-                $_SESSION['login_user'] = $user;
-                $_SESSION['name'] = $row['name'] . " " . $row['surname'];
-                header("location: intranet.php");
-            }
-            else {
-                if ($_SESSION['lang'] === 'sk') {
-                    $error = 'Nesprávne prihlasovacie meno alebo heslo';
+            set_error_handler("exception_error_handler");
+            try {
+                $bind = ldap_bind($ldap_conn, $ldaprdn, $pass);
+                if ($bind) {
+                    $_SESSION['login_user'] = $user;
+                    $_SESSION['name'] = $row['name'] . " " . $row['surname'];
+                    header("location: intranet.php");
                 }
-                else {
-                    $error = 'Username or Password is invalid';
-                }
+            } catch (ErrorException $e) {
+                $error = "Nesprávne prihlasovacie meno alebo heslo";
             }
         }
         else {
-            if ($_SESSION['lang'] === 'sk') {
-                $error = 'Nesprávne prihlasovacie meno alebo heslo';
-            }
-            else {
-                $error = 'Username or Password is invalid';
-            }
+            $error = 'Nesprávne prihlasovacie meno alebo heslo';
         }
     }
 }
