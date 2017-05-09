@@ -16,7 +16,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><?php echo $lang['home']; ?></a>
+            <a class="navbar-brand" href="index.php "><?php echo $lang['home']; ?></a>
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
@@ -61,8 +61,17 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?php echo $lang['lang_link'] ?>"><?php echo $lang['lang_change']; ?></a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> <?php echo $lang['login']; ?></a></li>
+                <?php
+                if (isset($_SESSION['name'])) {
+                    echo "<li><a href=\"#\" class=\"dropdown-togglex\" data-toggle=\"dropdown\"><span class=\"glyphicon glyphicon-user\"></span> " . $_SESSION['name'] . "<b class=\"caret\"></b></a>";
+                    echo "<ul class=\"dropdown-menu\">";
+                    echo "<li><a href=\"intranet_logout.php\">" . $lang['logout'] . "</a></li>";
+                    echo "</ul></li>";
+                } else {
+                    echo "<li><a href=\"intranet_login.php\"><span class=\"glyphicon glyphicon-log-in\"></span> " . $lang['login'] . "</a></li>";
+                }
+                ?>
             </ul>
-        </div><!--/.nav-collapse -->
+        </div>
     </div>
 </div>
