@@ -67,7 +67,8 @@
                     echo "<ul class=\"dropdown-menu\">";
                     echo "<li><a href=\"intranet_logout.php\">" . $lang['logout'] . "</a></li>";
                     echo "</ul></li>";
-                } else {
+                }
+                else {
                     echo "<li><a href=\"intranet_login.php\"><span class=\"glyphicon glyphicon-log-in\"></span> " . $lang['login'] . "</a></li>";
                 }
                 ?>

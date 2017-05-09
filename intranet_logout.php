@@ -7,7 +7,6 @@
  */
 include_once 'session.php';
 unset($_SESSION['name']);
-unset($_SESSION['id']);
 unset($_SESSION['login_user']);
 header("location: index.php");
 ?>

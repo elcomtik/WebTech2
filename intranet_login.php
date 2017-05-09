@@ -25,11 +25,15 @@ include_once 'menu.php';
 $error = '';
 if (isset($_POST['submit'])) {
     if (empty($_POST['username'] || $_POST['pass'])) {
-        if ($_SESSION['lang'] === 'sk')
+        if ($_SESSION['lang'] === 'sk') {
             $error = 'Nesprávne prihlasovacie meno alebo heslo';
-        else
+        }
+        else {
             $error = 'Username or Password is invalid';
-    } else {
+        }
+    }
+    else {
+
         include_once 'DB_config.php';
         $conn = new mysqli($servername, $username, $password, $db_name);
 
@@ -39,26 +43,49 @@ if (isset($_POST['submit'])) {
 
         $user = stripslashes($_POST['username']);
         $user = mysqli_real_escape_string($conn, $user);
-        $pass = hash('sha512', $_POST['pass']);
-        $result = $conn->query("SELECT * FROM `intranet_user` WHERE `username` = '$user'");
+        $pass = $_POST['pass'];
+
+        $ldap_config['host'] = 'ldap.stuba.sk';
+        $ldap_config['port'] = '389';
+        $ldaprdn = "uid=$user, ou=People, DC=stuba, DC=sk";
+
+        $result = $conn->query("SELECT * FROM `user` WHERE `ldapLogin` = '$user'");
+
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
-            if ($row['password'] === $pass) {
-                $_SESSION['login_user'] = $row['username'];
-                $_SESSION['id_user'] = $row['id'];
-                $_SESSION['name'] = $row['first_name'] . " " . $row['last_name'];
-                header("location: intranet.php");
-            } else {
-                if ($_SESSION['lang'] === 'sk')
-                    $error = 'Nesprávne prihlasovacie meno alebo heslo';
-                else
-                    $error = 'Username or Password is invalid';
+
+            if (!($ldap_conn = ldap_connect($ldap_config['host'], $ldap_config['port']))) {
+                if ($_SESSION['lang'] === 'sk') {
+                    $error = 'Nedokážeme kontaktovať LDAP';
+                }
+                else {
+                    $error = 'We can\'t contact LDAP';
+                }
             }
-        } else {
-            if ($_SESSION['lang'] === 'sk')
+
+            ldap_set_option($ldap_conn, LDAP_OPT_PROTOCOL_VERSION, 3);
+            $bind = ldap_bind($ldap_conn, $ldaprdn, $pass);
+            if ($bind) {
+                $_SESSION['login_user'] = $user;
+                $_SESSION['name'] = $row['name'] . " " . $row['surname'];
+                header("location: intranet.php");
+            }
+            else {
+                if ($_SESSION['lang'] === 'sk') {
+                    $error = 'Nesprávne prihlasovacie meno alebo heslo';
+                }
+                else {
+                    $error = 'Username or Password is invalid';
+                }
+            }
+        }
+        else {
+            if ($_SESSION['lang'] === 'sk') {
                 $error = 'Nesprávne prihlasovacie meno alebo heslo';
-            else
+            }
+            else {
                 $error = 'Username or Password is invalid';
+            }
         }
     }
 }
@@ -80,8 +107,9 @@ if (isset($_POST['submit'])) {
                         name="submit"><?php echo $lang['login_button'] ?></button>
             </div>
             <?php
-            if ($error !== '')
+            if ($error !== '') {
                 echo "<div class=\"form-group\"><div class=\"alert alert-danger\" role=\"alert\">" . $error . "</div></div>";
+            }
             ?>
         </form>
     </div>
