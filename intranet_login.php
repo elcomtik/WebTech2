@@ -92,7 +92,7 @@ if (isset($_POST['submit'])) {
 ?>
 
 <div class="container">
-    <div class="well-lg well col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+    <div class="well-lg well col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3">
         <form action="intranet_login.php" method="post">
             <div class="form-group">
                 <label for="email"><?php echo $lang['username'] ?></label>

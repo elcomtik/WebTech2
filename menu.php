@@ -65,6 +65,14 @@
                 if (isset($_SESSION['name'])) {
                     echo "<li><a href=\"#\" class=\"dropdown-togglex\" data-toggle=\"dropdown\"><span class=\"glyphicon glyphicon-user\"></span> " . $_SESSION['name'] . "<b class=\"caret\"></b></a>";
                     echo "<ul class=\"dropdown-menu\">";
+                    echo "<li><a href=\"intranet_logout.php\">Pedagogika</a></li>";
+                    echo "<li><a href=\"intranet_logout.php\">Doktoranti</a></li>";
+                    echo "<li><a href=\"intranet_logout.php\">Publikácie</a></li>";
+                    echo "<li><a href=\"intranet_logout.php\">Sluožbné cesty</a></li>";
+                    echo "<li><a href=\"intranet_logout.php\">Nákupy</a></li>";
+                    echo "<li><a href=\"intranet_logout.php\">Dochádzka</a></li>";
+                    echo "<li><a href=\"intranet_logout.php\">Rozdelenie úloh</a></li>";
+                    echo "<li role=\"separator\" class=\"divider\"></li>";
                     echo "<li><a href=\"intranet_logout.php\">" . $lang['logout'] . "</a></li>";
                     echo "</ul></li>";
                 }
