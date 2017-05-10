@@ -30,9 +30,8 @@ function exception_error_handler($errno, $errstr, $errfile, $errline)
 }
 
 if (isset($_POST['submit'])) {
-    if (empty($_POST['username'] || $_POST['pass'])) {
-        $error = 'Nesprávne prihlasovacie meno alebo heslo';
-
+    if (empty($_POST['username']) || empty($_POST['pass'])) {
+        $error = 'Prihlasovacie meno a heslo nesmú byť prázdne';
     }
     else {
 

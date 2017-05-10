@@ -20,11 +20,14 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#"><?php echo $lang['about_us']; ?></a></li>
-                <li><a href="#"><?php echo $lang['staff']; ?></a></li>
-                <li><a href="#"><?php echo $lang['study']; ?></a></li>
+                <li class="active"><a href="#"><span
+                                class="glyphicon glyphicon-th-list"></span> <?php echo $lang['about_us']; ?></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['staff']; ?></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-education"></span> <?php echo $lang['study']; ?></a>
+                </li>
                 <li>
-                    <a href="#" class="dropdown-togglex" data-toggle="dropdown"><?php echo $lang['research']; ?><b
+                    <a href="#" class="dropdown-togglex" data-toggle="dropdown"><span
+                                class="glyphicon glyphicon-certificate"></span> <?php echo $lang['research']; ?><b
                                 class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><?php echo $lang['projects']; ?></a></li>
@@ -40,9 +43,10 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#"><?php echo $lang['news']; ?></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> <?php echo $lang['news']; ?></a></li>
                 <li>
-                    <a href="#" class="dropdown-togglex" data-toggle="dropdown"><?php echo $lang['activities']; ?><b
+                    <a href="#" class="dropdown-togglex" data-toggle="dropdown"><span
+                                class="glyphicon glyphicon-check"></span> <?php echo $lang['activities']; ?><b
                                 class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><?php echo $lang['photos']; ?></a></li>
@@ -57,7 +61,8 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#"><?php echo $lang['contact']; ?></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> <?php echo $lang['contact']; ?></a>
+                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="<?php echo $lang['lang_link'] ?>"><?php echo $lang['lang_change']; ?></a></li>
@@ -73,7 +78,7 @@
                     echo "<li><a href=\"intranet_logout.php\">Dochádzka</a></li>";
                     echo "<li><a href=\"intranet_logout.php\">Rozdelenie úloh</a></li>";
                     echo "<li role=\"separator\" class=\"divider\"></li>";
-                    echo "<li><a href=\"intranet_logout.php\">" . $lang['logout'] . "</a></li>";
+                    echo "<li><a href=\"intranet_logout.php\"><span class='glyphicon glyphicon-log-out'></span> " . $lang['logout'] . "</a></li>";
                     echo "</ul></li>";
                 }
                 else {
