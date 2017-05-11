@@ -20,7 +20,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#"><span
+                <li><a href="#"><span
                                 class="glyphicon glyphicon-th-list"></span> <?php echo $lang['about_us']; ?></a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['staff']; ?></a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-education"></span> <?php echo $lang['study']; ?></a>
@@ -65,7 +65,8 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?php echo $lang['lang_link'] ?>"><?php echo $lang['lang_change']; ?></a></li>
+                <li><a href="<?php echo $lang['lang_link'] ?>"><span
+                                class="glyphicon glyphicon-globe"></span> <?php echo $lang['lang_change']; ?></a></li>
                 <?php
                 if (isset($_SESSION['name'])) {
                     echo "<li><a href=\"#\" class=\"dropdown-togglex\" data-toggle=\"dropdown\"><span class=\"glyphicon glyphicon-user\"></span> " . $_SESSION['name'] . "<b class=\"caret\"></b></a>";

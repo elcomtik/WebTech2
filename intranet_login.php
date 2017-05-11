@@ -74,7 +74,7 @@ if (isset($_POST['submit'])) {
             }
         }
         else {
-            $error = 'Nesprávne prihlasovacie meno alebo heslo';
+            $error = 'Zadaný užívateľ nemá prístup do intranetu';
         }
     }
 }
