@@ -7,10 +7,16 @@
  */
 
 include_once 'session.php';
-include_once 'includes.php';
 ?>
+<head>
+    <?php
+    include_once 'includes.php';
+    ?>
+</head>
 <body>
 <?php
 include_once 'menu.php';
 ?>
+
+
 </body>

@@ -84,16 +84,16 @@ if (isset($_POST['submit'])) {
     <div class="well-lg well col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3">
         <form action="intranet_login.php" method="post">
             <div class="form-group">
-                <label for="email"><?php echo $lang['username'] ?></label>
+                <label for="email"><?php echo $lang['intranet_login.username'] ?></label>
                 <input type="username" class="form-control" name="username">
             </div>
             <div class="form-group">
-                <label for="pwd"><?php echo $lang['pass'] ?></label>
+                <label for="pwd"><?php echo $lang['intranet_login.pass'] ?></label>
                 <input type="password" class="form-control" name="pass">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-success btn-block"
-                        name="submit"><?php echo $lang['login_button'] ?></button>
+                        name="submit"><?php echo $lang['intranet_login.login_button'] ?></button>
             </div>
             <?php
             if ($error !== '') {

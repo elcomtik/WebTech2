@@ -14,3 +14,8 @@
 <script rel="script" src="assets/jquery/jquery-3.2.1.min.js"></script>
 <script rel="script" src="assets/js/menu.js"></script>
 <script rel="script" src="assets/bootstrap/bootstrap/js/bootstrap.min.js"></script>
+
+<?php
+if (in_array("video.php", explode("/", $_SERVER['REQUEST_URI']))) {
+    echo "<script rel=\"script\" src=\"assets/js/video.js\"></script>";
+}
