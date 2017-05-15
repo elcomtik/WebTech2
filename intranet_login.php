@@ -5,30 +5,7 @@
  * Date: 5/8/17
  * Time: 9:17 PM
  */
-
-
 include_once 'session.php';
-if (isset($_SESSION['login_user'])) {
-    header("location: intranet.php");
-}
-?>
-
-<head>
-    <?php
-    include_once 'includes.php'
-    ?>
-</head>
-
-<body>
-<?php
-include_once 'menu.php';
-$error = '';
-
-function exception_error_handler($errno, $errstr, $errfile, $errline)
-{
-    throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
-}
-
 if (isset($_POST['submit'])) {
     if (empty($_POST['username']) || empty($_POST['pass'])) {
         $error = 'Prihlasovacie meno a heslo nesmú byť prázdne';
@@ -78,6 +55,28 @@ if (isset($_POST['submit'])) {
         }
     }
 }
+
+if (isset($_SESSION['login_user'])) {
+    header("location: intranet.php");
+}
+?>
+
+<head>
+    <?php
+    include_once 'includes.php'
+    ?>
+</head>
+
+<body>
+<?php
+include_once 'menu.php';
+$error = '';
+
+function exception_error_handler($errno, $errstr, $errfile, $errline)
+{
+    throw new ErrorException($errstr, $errno, 0, $errfile, $errline);
+}
+
 ?>
 
 <div class="container">

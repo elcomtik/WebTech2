@@ -26,7 +26,7 @@ $lang = array(
     'navbar.our_websites' => "Naše tématické web stránky",
     'navbar.electromobility' => "Elektromobilita",
     'navbar.contact' => "Kontakt",
-    'navbar.login' => "Prihlásene",
+    'navbar.login' => "Prihlásenie",
     'navbar.lang_change' => "EN",
     'navbar.logout' => "Odhlásenie",
     'lang_link' => "?lang=en",

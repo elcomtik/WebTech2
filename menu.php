@@ -87,7 +87,7 @@
                     echo "<li><a href=\"intranet_logout.php\">Sluožbné cesty</a></li>";
                     echo "<li><a href=\"intranet_logout.php\">Nákupy</a></li>";
                     echo "<li><a href=\"intranet_logout.php\">Dochádzka</a></li>";
-                    echo "<li><a href=\"intranet_logout.php\">Rozdelenie úloh</a></li>";
+                    echo "<li><a href=\"rozdelenie_uloh.php\">Rozdelenie úloh</a></li>";
                     echo "<li role=\"separator\" class=\"divider\"></li>";
                     echo "<li><a href=\"intranet_logout.php\"><span class='glyphicon glyphicon-log-out'></span> " . $lang['navbar.logout'] . "</a></li>";
                     echo "</ul></li>";
