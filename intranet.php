@@ -6,6 +6,9 @@
  * Time: 10:16 PM
  */
 include_once 'session.php';
+if (!isset($_SESSION['name'])) {
+    header('location: index.php');
+}
 ?>
 
 <head>
