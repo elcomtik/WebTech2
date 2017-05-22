@@ -6,7 +6,7 @@
  * Time: 9:53 PM
  */
 
-$servername = "";
-$username = "";
-$password = "";
-$db_name = "";
+$servername = "localhost";
+$username = "c1wt2";
+$password = "gMn3LAJd#sPx3";
+$db_name = "c1_wt2_projekt";
