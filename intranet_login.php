@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
         $ldap_config['port'] = '389';
         $ldaprdn = "uid=$user, ou=People, DC=stuba, DC=sk";
 
-        $result = $conn->query("SELECT * FROM `user` WHERE `ldapLogin` = '$user'");
+        $result = $conn->query("SELECT * FROM `intranet_user` WHERE `ldapLogin` = '$user'");
 
         if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
