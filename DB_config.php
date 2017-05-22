@@ -6,7 +6,7 @@
  * Time: 9:53 PM
  */
 
-$servername = 'localhost';
-$username = 'dbuser';
-$password = 'dbuser';
-$db_name = "rocnikove";
+$servername = "";
+$username = "";
+$password = "";
+$db_name = "";

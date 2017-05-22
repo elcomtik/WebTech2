@@ -12,6 +12,10 @@
     <title>Domov</title>
 </head>
 
+<?php
+include_once 'session.php';
+?>
+
 <body>
 <?php
 include_once 'menu.php';
