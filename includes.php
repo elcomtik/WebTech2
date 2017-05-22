@@ -16,3 +16,11 @@ include_once 'session.php';
 <script rel="script" src="assets/js/menu.js"></script>
 <script rel="script" src="assets/bootstrap/bootstrap/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="assets/font_awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/footer.css">
+<link rel="stylesheet" href="assets/css/footer_demo.css">
+
+
+<?php
+if (in_array("video.php", explode("/", $_SERVER['REQUEST_URI']))) {
+    echo "<script rel=\"script\" src=\"assets/js/video.js\"></script>";
+}
