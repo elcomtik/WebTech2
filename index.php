@@ -5,18 +5,16 @@
  * Date: 5/5/17
  * Time: 7:13 PM
  */
-
-include_once 'session.php';
 ?>
+
 <head>
-    <?php
-    include_once 'includes.php';
-    ?>
+    <?php include_once 'includes.php'; ?>
+    <title>Domov</title>
 </head>
+
 <body>
 <?php
 include_once 'menu.php';
 ?>
-
 
 </body>
