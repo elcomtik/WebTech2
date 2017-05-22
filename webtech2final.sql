@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Databáza: `webtech2final`
+-- Databáza: `c1_wt2_projekt`
 --
 
 -- --------------------------------------------------------
