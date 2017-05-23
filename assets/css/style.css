@@ -66,3 +66,21 @@ li > .dropdown-menu a {
     align-items: center;
     display: flex;
 }
+
+.col{
+    padding-top: 1%;
+    text-align: justify;
+}
+
+.col1{
+    padding-left: 4%;
+    padding-right: 1%;
+}
+.col2{
+    padding-left: 1%;
+    padding-right: 4%;
+}
+
+.mojnadpish3{
+    text-align: center;
+}
