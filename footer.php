@@ -1,20 +1,16 @@
-
 <footer class="footer-distributed">
 
     <div class="row">
 
 
-
         <div class="footer-left col-lg-4">
 
             <a href="http://is.stuba.sk/" class="footer-company-name">AIS STU</a><br>
-            <a href="http://aladin.elf.stuba.sk/rozvrh/" class="footer-company-name">Rozvrh hodín FEI</a><br>
             <a href="http://elearn.elf.stuba.sk/moodle/" class="footer-company-name">Moodle FEI</a><br>
-
             <a href="https://www.jedalen.stuba.sk/WebKredit" class="footer-company-name">Jedáleň STU</a><br>
             <a href="https://webmail.stuba.sk/" class="footer-company-name">Webmail STU</a><br>
+            <a href="http://aladin.elf.stuba.sk/rozvrh/" class="footer-company-name">Rozvrh hodín FEI</a><br>
         </div>
-
 
 
         <div class="footer-center col-lg-4">
@@ -23,6 +19,7 @@
                 <i class="fa fa-map-marker"></i>
                 <p><span>Ilkovičova 3</span> Bratislava, Slovensko</p>
             </div>
+
 
             <div>
                 <i class="fa fa-phone"></i>
@@ -40,7 +37,8 @@
         <div class="footer-right col-lg-4">
 
             <a href="http://www.sski.sk/webstranka/" class="footer-company-name">SSKI</a><br>
-            <a href="https://kis.cvt.stuba.sk/i3/epcareports/epcarep.csp?ictx=stu&language=1" class="footer-company-name">Evidencia publikácií STU</a><br>
+            <a href="https://kis.cvt.stuba.sk/i3/epcareports/epcarep.csp?ictx=stu&language=1"
+               class="footer-company-name">Evidencia publikácií STU</a><br>
             <a href="http://okocasopis.sk/" class="footer-company-name">Časopis OKO</a><br>
 
             <div class="footer-icons">
