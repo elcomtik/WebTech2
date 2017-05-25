@@ -23,7 +23,7 @@
                 <li><a href="#"><span
                                 class="glyphicon glyphicon-th-list"></span> <?php echo $lang['navbar.about_us']; ?></a>
                 </li>
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['navbar.staff']; ?></a>
+                <li><a href="pracovnici.php"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['navbar.staff']; ?></a>
                 </li>
                 <li><a href="#"><span class="glyphicon glyphicon-education"></span> <?php echo $lang['navbar.study']; ?>
                     </a>
@@ -34,7 +34,7 @@
                         <b
                                 class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#"><?php echo $lang['navbar.projects']; ?></a></li>
+                        <li><a href="research_projects.php"><?php echo $lang['navbar.projects']; ?></a></li>
                         <li>
                             <a href="#" class="dropdown-toggle"
                                data-toggle="dropdown"><?php echo $lang['navbar.research_topics']; ?><b
@@ -78,23 +78,23 @@
                                 class="glyphicon glyphicon-globe"></span> <?php echo $lang['navbar.lang_change']; ?></a>
                 </li>
                 <?php
-                if (isset($_SESSION['name'])) {
+//                if (isset($_SESSION['name'])) {
                     echo "<li><a href=\"#\" class=\"dropdown-togglex\" data-toggle=\"dropdown\"><span class=\"glyphicon glyphicon-user\"></span> " . $_SESSION['name'] . "<b class=\"caret\"></b></a>";
                     echo "<ul class=\"dropdown-menu\">";
-                    echo "<li><a href=\"intranet_logout.php\">Pedagogika</a></li>";
-                    echo "<li><a href=\"intranet_logout.php\">Doktoranti</a></li>";
-                    echo "<li><a href=\"intranet_logout.php\">Publikácie</a></li>";
-                    echo "<li><a href=\"intranet_logout.php\">Sluožbné cesty</a></li>";
-                    echo "<li><a href=\"intranet_logout.php\">Nákupy</a></li>";
-                    echo "<li><a href=\"intranet_logout.php\">Dochádzka</a></li>";
-                    echo "<li><a href=\"rozdelenie_uloh.php\">Rozdelenie úloh</a></li>";
+                    echo "<li><a href=\"intranet_pedagogika.php\">" .$lang['intranet.pedagogy'] . "</a></li>";
+                    echo "<li><a href=\"intranet_doktorandi.php\">" .$lang['intranet.inceptors'] . "</a></li>";
+                    echo "<li><a href=\"intranet_publikacie.php\">". $lang['intranet.publications'] . "</a></li>";
+                    echo "<li><a href=\"intranet_sluzobne.php\">". $lang['intranet.business'] . "</a></li>";
+                    echo "<li><a href=\"intranet_nakupy.php\">". $lang['intranet.purchases'] . "</a></li>";
+                    echo "<li><a href=\"intranet_dochadzka.php\">". $lang['intranet.attendance'] . "</a></li>";
+                    echo "<li><a href=\"intranet_rozdelenie.php\">". $lang['intranet.distribution'] . "</a></li>";
                     echo "<li role=\"separator\" class=\"divider\"></li>";
                     echo "<li><a href=\"intranet_logout.php\"><span class='glyphicon glyphicon-log-out'></span> " . $lang['navbar.logout'] . "</a></li>";
                     echo "</ul></li>";
-                }
-                else {
-                    echo "<li><a href=\"intranet_login.php\"><span class=\"glyphicon glyphicon-log-in\"></span> " . $lang['navbar.login'] . "</a></li>";
-                }
+//                }
+//                else {
+//                    echo "<li><a href=\"intranet_login.php\"><span class=\"glyphicon glyphicon-log-in\"></span> " . $lang['navbar.login'] . "</a></li>";
+//                }
                 ?>
             </ul>
         </div>
