@@ -33,5 +33,15 @@ $lang = array(
     'intranet_login.username' => "Prihlasovacie meno",
     'intranet_login.pass' => "Heslo",
     'intranet_login.login_button' => "Prihlásiť",
-    'video.video_list' => "Zoznam videií"
+    'video.video_list' => "Zoznam videií",
+    'contact.contact_person' => "Kontaktná osoba",
+    'contact.locate_us' => "Kde nás nájdete?",
+    'contact.faculty' => "Fakulta elektrotechniky a informatiky",
+    'contact.university' => "Slovenská technická univerzita",
+    'contact.country' => "Slovenská republika",
+    'footer.dining_room' => "Jedáleň STU",
+    'footer.timetable' => "Rozvrh hodín FEI",
+    'footer.country' => "Bratislava, Slovensko",
+    'footer.magazine' => "Časopis OKO",
+    'footer.evidence' => "Evidencia publikácií STU"
 );
