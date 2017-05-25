@@ -34,7 +34,6 @@ if (isset($_POST['submit'])) {
 
             if (!($ldap_conn = ldap_connect($ldap_config['host'], $ldap_config['port']))) {
                 $error = 'Nedokážeme kontaktovať LDAP';
-
             }
 
             ldap_set_option($ldap_conn, LDAP_OPT_PROTOCOL_VERSION, 3);
@@ -44,6 +43,12 @@ if (isset($_POST['submit'])) {
                 if ($bind) {
                     $_SESSION['login_user'] = $user;
                     $_SESSION['name'] = $row['name'] . " " . $row['surname'];
+                    $_SESSION['user'] = $row['user'];
+                    $_SESSION['hr'] = $row['hr'];
+                    $_SESSION['reporter'] = $row['reporter'];
+                    $_SESSION['editor'] = $row['editor'];
+                    $_SESSION['admin'] = $row['admin'];
+
                     header("location: intranet.php");
                 }
             } catch (ErrorException $e) {
