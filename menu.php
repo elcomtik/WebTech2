@@ -68,7 +68,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#"><span
+                <li><a href="contact.php"><span
                                 class="glyphicon glyphicon-map-marker"></span> <?php echo $lang['navbar.contact']; ?>
                     </a>
                 </li>
