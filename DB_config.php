@@ -7,6 +7,6 @@
  */
 
 $servername = "localhost";
-$username = "wt2projekt";
-$password = "gMn3LAJd#sPx3";
-$db_name = "zaverecny_projekt";
+$username = "dbuser";
+$password = "dbuser";
+$db_name = "rocnikove";
