@@ -127,43 +127,43 @@ include_once 'menu.php';
         <tr>
             <td>Pedagogika</td>
             <td></td>
-            <td></td>
+            <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Doktorandi</td>
             <td></td>
-            <td></td>
+            <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Publikácie</td>
             <td></td>
-            <td></td>
+            <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Služobné cesty</td>
             <td></td>
-            <td></td>
+            <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Nákupy</td>
             <td></td>
-            <td></td>
+            <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Dochádzka</td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
+            <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
             <td></td>
         </tr>
         <tr>
