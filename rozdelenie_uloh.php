@@ -132,7 +132,7 @@ include_once 'menu.php';
             <td></td>
         </tr>
         <tr>
-            <td>Doktoranti</td>
+            <td>Doktorandi</td>
             <td></td>
             <td></td>
             <td></td>
