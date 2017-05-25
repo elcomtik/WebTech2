@@ -5,6 +5,7 @@
  * Date: 5/8/17
  * Time: 9:17 PM
  */
+$error = '';
 include_once 'session.php';
 if (isset($_POST['submit'])) {
     if (empty($_POST['username']) || empty($_POST['pass'])) {
@@ -75,7 +76,6 @@ if (isset($_SESSION['login_user'])) {
 <body>
 <?php
 include_once 'menu.php';
-$error = '';
 
 function exception_error_handler($errno, $errstr, $errfile, $errline)
 {

@@ -18,6 +18,11 @@ include_once 'session.php';
 include_once 'menu.php';
 include_once 'DB_config.php';
 
+if ($_SESSION['lang'] == 'en') {
+    header('location: index.php');
+}
+
+
 $conn = new mysqli($servername, $username, $password, $db_name);
 $conn->set_charset('utf8');
 $result = $conn->query("SELECT * FROM `video_list`");
