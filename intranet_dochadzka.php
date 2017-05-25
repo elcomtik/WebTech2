@@ -6,9 +6,9 @@
  * Time: 3:44 PM
  */
 include_once 'session.php';
-if (!isset($_SESSION['name'])) {
-    header('location: index.php');
-}
+//if (!isset($_SESSION['name'])) {
+//    header('location: index.php');
+//}
 ?>
 
 <head>
@@ -18,6 +18,8 @@ if (!isset($_SESSION['name'])) {
     <script src=”http://tinymce.cachefly.net/4.0/tinymce.min.js”></script>
     <script src="assets/js/intranet.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dochadzka.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/switch.css">
     <link rel=" stylesheet" type="text/css" href="assets/css/tinytools.toggleswitch.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -62,6 +64,7 @@ Date of log: <input type="month" id="month" onchange="sendDate(this.value);">
     <b>Edit mode</b>
 </div>
 <div id="result"></div>
+<button  class="btn" onclick="window.print()">Export PDF</button>
 <div id="buttons">
     <button id="clear">Clear All</button>
     <button id="save" onClick="saveData()">Save</button>

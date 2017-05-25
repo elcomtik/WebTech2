@@ -26,7 +26,6 @@ function isWeekend($date)
 
 function getTable($date)
 {
-
     //list($year, $month) = preg_split('[/.-]', $date);
     list($year, $month) = explode("-", $date);
     //echo $year + ", ";
@@ -35,8 +34,6 @@ function getTable($date)
 
 
     $days_in_month = cal_days_in_month(CAL_GREGORIAN, $month, $year);
-
-    //echo $days_in_month;
     //echo ", ";
 
     // Creating connection
@@ -48,8 +45,7 @@ function getTable($date)
     echo '<script>console.log("[MySQL] Database connected successfully")</script>';
 
     mysqli_set_charset($conn, "utf8");
-    $sql = "SELECT id,firstname,lastname FROM users ORDER BY firstname";
-
+    $sql = "SELECT ID, NAME FROM users ORDER BY NAME";
     $rs = $conn->query($sql);
 
     if ($rs->num_rows > 0) {
@@ -73,8 +69,8 @@ function getTable($date)
 
         while ($row = $rs->fetch_assoc()) {
             //$table.='<option value="'.$row['id'].'">'.$row['firstname'].' ' .$row['lastname'].'</option>';
-            $table .= '<tr id="' . $row['id'] . '"><td id="name">' . $row['firstname'] . ' ' . $row['lastname'] . '</td>';
-            $user_id = $row['id'];
+            $table .= '<tr id="' . $row['ID'] . '"><td id="name">' . $row['NAME'] . '</td>';
+            $user_id = $row['ID'];
 
             $sql = "SELECT start_date,end_date,status_id FROM evidence WHERE user_id=" . $user_id . " AND MONTH(start_date)=" . $month . " AND YEAR(start_date)=" . $year . " ORDER BY id,start_date";
             $rs1 = $conn->query($sql);
