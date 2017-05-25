@@ -68,5 +68,15 @@ $lang = array(
     'projects.investigator' => 'Principal investigator',
     'projects.cooperation' => 'Cooperation',
     'projects.others' => 'Other domestic projects',
-    'projects.annotation' => 'Anotation'
+    'projects.annotation' => 'Anotation',
+    'contact.contact_person' => "Contact person",
+    'contact.locate_us' => "Locate us",
+    'contact.faculty' => "Faculty of Electrical Engineering and Information Technology",
+    'contact.university' => "Slovak University of Technology",
+    'contact.country' => "Slovak republic",
+    'footer.dining_room' => "Jedáleň STU",
+    'footer.timetable' => "Timetable FEI",
+    'footer.country' => "Bratislava, Slovakia",
+    'footer.magazine' => "Magazine OKO",
+    'footer.evidence' => "Publication evidence STU"
 );
