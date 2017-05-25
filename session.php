@@ -20,6 +20,7 @@ if (isSet($_GET['lang'])) {
 } else {
     $lang = 'sk';
 }
+$_SESSION['lang'] = $lang;
 switch ($lang) {
     case 'en':
         $lang_file = 'lang.en.php';
