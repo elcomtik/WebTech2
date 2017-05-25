@@ -40,6 +40,7 @@ $lang = array(
     'intranet.purchases' => 'Purchases',
     'intranet.attendance' => 'Attendance',
     'intranet.distribution' => 'Task distribution',
+    'intranet.video_management' => 'Video management',
     'document' => 'Document',
     'attachment' => 'Attachment',
     'button.add.link' => 'Add link',

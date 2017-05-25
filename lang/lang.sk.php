@@ -41,6 +41,7 @@ $lang = array(
     'intranet.purchases' => 'Nákupy',
     'intranet.attendance' => 'Dochádzka',
     'intranet.distribution' => 'Rozdelenie úloh',
+    'intranet.video_management' => 'Správa videí',
     'document' => 'Dokument',
     'attachment' => 'Príloha',
     'button.add.link' => 'Pridaj odkaz',

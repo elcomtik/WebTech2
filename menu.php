@@ -88,6 +88,7 @@
                     echo "<li><a href=\"intranet_nakupy.php\">". $lang['intranet.purchases'] . "</a></li>";
                     echo "<li><a href=\"intranet_dochadzka.php\">". $lang['intranet.attendance'] . "</a></li>";
                     echo "<li><a href=\"intranet_rozdelenie.php\">". $lang['intranet.distribution'] . "</a></li>";
+                    echo "<li><a href=\"video_managment.php\">" . $lang['intranet.video_management'] . "</a></li>";
                     echo "<li role=\"separator\" class=\"divider\"></li>";
                     echo "<li><a href=\"intranet_logout.php\"><span class='glyphicon glyphicon-log-out'></span> " . $lang['navbar.logout'] . "</a></li>";
                     echo "</ul></li>";
