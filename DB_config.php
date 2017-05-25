@@ -7,6 +7,6 @@
  */
 
 $servername = "localhost";
-$username = "c1wt2";
+$username = "wt2projekt";
 $password = "gMn3LAJd#sPx3";
-$db_name = "c1_wt2_projekt";
+$db_name = "zaverecny_projekt";
