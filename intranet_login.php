@@ -15,6 +15,7 @@ if (isset($_POST['submit'])) {
 
         include_once 'DB_config.php';
         $conn = new mysqli($servername, $username, $password, $db_name);
+        $conn->set_charset('utf8');
 
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
