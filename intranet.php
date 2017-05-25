@@ -9,6 +9,9 @@ include_once 'session.php';
 if (!isset($_SESSION['name'])) {
     header('location: index.php');
 }
+if ($_SESSION['lang'] == 'en') {
+    header('location: index.php');
+}
 ?>
 
 <head>
