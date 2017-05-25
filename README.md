@@ -23,12 +23,13 @@ Návod pre autorov:
 * Musíte dodržať template aby sa to zobrazovalo OK:
 * 1. include_once('session.php'); - obsahuje premenné o nastavenom jazyku a prihlásenom užívateľovi
 * 2. \<head> tag 
-* 3. inculde_once(includes.php) - dodá zakladné závislosti (bootstrap, jquery, bootstrap scripty, a pod.) osobitné dependencie si každý ošetruje sám vo svojom súbore
+* 3. include_once('includes.php') - dodá zakladné závislosti (bootstrap, jquery, bootstrap scripty, a pod.) osobitné dependencie si každý ošetruje sám vo svojom súbore
 * 4. \<\head> tag
 * 5. \<body> tag
-* 6. include_once(menu.php); - vykreslí navigačnú lištu v danom jazyku a s prihlásenym užívateľom atd.
+* 6. include_once('menu.php'); - vykreslí navigačnú lištu v danom jazyku a s prihlásenym užívateľom atd.
 * 7. Váš kód
 * 8. \<\body> tag
+* 9. include_once('footer.php'); - vykreslí pätku stránky.
 * Ak chete zistiť či je niekto prihlásený stači požit if(isset($_SESSION['name'])); -ak vráti true tak je prihlásený 
 * Zoznam parametrov pre $_SESSION:
 * 1. name - obsahuje celé meno prihláseného užívateľa
