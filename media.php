@@ -25,7 +25,7 @@ include_once 'DB_config.php';
 
 ?>
 <div class="row row-no-margin">
-    <div class="container-fluid col-lg-3">
+    <div class="container-fluid col-lg-6 col-lg-offset-3">
         <table class="table table-hover col-lg-12">
             <thead>
             <th>
@@ -42,17 +42,19 @@ include_once 'DB_config.php';
             $conn->set_charset('utf8');
 
             $stmt =  $conn->stmt_init();
-            if ($stmt = $conn->prepare("SELECT id,date,title,filename FROM MEDIA")){
+            if ($stmt = $conn->prepare("SELECT id,title,media,date,filename,url FROM MEDIA")){
 
                 $stmt->execute();
 
                 /* bind result variables */
-                $stmt->bind_result($id, $date, $title, $folder);
+                $stmt->bind_result($id, $title, $media, $date, $filename, $url);
                 while ($stmt->fetch()) {
 
-                    echo "<tr filename=" . $folder . "><td>";
-                    echo $title;
-                    echo "</td></tr>";
+                    echo "<tr filename='" . $filename . "' url='" . $url . "'>";
+                    echo "<td>" . $title . "</td>";
+                    echo "<td>" . $media . "</td>";
+                    echo "<td>" . $date . "</td>";
+                    echo "</tr>";
                 }
                 $stmt->close();
             }
@@ -65,13 +67,6 @@ include_once 'DB_config.php';
 
             </tbody>
         </table>
-    </div>
-
-    <div class="container-fluid col-lg-9">
-<!--        <div class="demo-gallery">-->
-<!--            <ul id="lightgallery" class="list-unstyled row">-->
-<!--            </ul>-->
-<!--        </div>-->
     </div>
 </div>
 
