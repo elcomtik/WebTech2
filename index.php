@@ -23,7 +23,7 @@ include_once 'session.php';
 include_once 'menu.php';
 ?>
 
-<h3 class="mojnadpish3">Ústav mechatroniky</h3>
+<h3 class="mojnadpish3">Ústav automobilovej mechatroniky FEI STU</h3>
 
 <div class="slideshow-container">
 
