@@ -8,7 +8,12 @@
 ?>
 
 <head>
-    <?php include_once 'includes.php'; ?>
+    <?php include_once 'includes.php';
+    if ($_SESSION['lang'] == 'en') {
+        header('location: index.php');
+    }
+
+    ?>
     <title>Domov</title>
     <link rel="stylesheet" type="text/css" href="assets/css/slideshow.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">

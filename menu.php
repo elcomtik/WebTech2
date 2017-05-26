@@ -63,7 +63,7 @@
                                data-toggle="dropdown"><?php echo $lang['navbar.our_websites']; ?><b
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#"><?php echo $lang['navbar.electromobility']; ?></a></li>
+                                <li><a href="http://www.e-mobilita.fei.stuba.sk"><?php echo $lang['navbar.electromobility']; ?></a></li>
                             </ul>
                         </li>
                     </ul>

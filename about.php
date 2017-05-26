@@ -8,7 +8,11 @@
 ?>
 
 <head>
-    <?php include_once 'includes.php'; ?>
+    <?php include_once 'includes.php';
+    if ($_SESSION['lang'] == 'en') {
+        header('location: index.php');
+    }
+    ?>
     <script rel="script" src="assets/js/content.js"></script>
     <title>O nás</title>
 </head>
