@@ -53,5 +53,6 @@ include_once 'menu.php';
     </tbody>
 </table>
 <?php include "pracovnici_detail_curl.php"; ?>
+<?php include_once 'footer.php' ?>
 
 </body>

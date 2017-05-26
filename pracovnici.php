@@ -56,4 +56,5 @@ include_once 'menu.php';
     </tbody>
 </table>
 </div>
+<?php include_once 'footer.php' ?>
 </body>

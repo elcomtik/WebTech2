@@ -182,4 +182,5 @@ include_once 'menu.php';
     </tr>
     </tbody>
 </table>
+<?php include_once 'footer.php' ?>
 </body>
