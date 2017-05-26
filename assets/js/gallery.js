@@ -20,8 +20,8 @@ function nacitajObrazky() {
             console.log(response);
             $('#lightgallery').html(response);
             $("#lightgallery").lightGallery({
-                width: '700px',
-                height: '470px',
+                width: '100%',
+                height: '100%',
                 mode: 'lg-fade',
                 addClass: 'fixed-size',
                 thumbnail: true,
