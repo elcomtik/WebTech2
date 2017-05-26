@@ -173,6 +173,13 @@ include_once 'menu.php';
             <td></td>
             <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
         </tr>
+        <tr>
+            <td>Výskumné oblasti</td>
+            <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
+            <td></td>
+            <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
+            <td class="text-center"><span class="glyphicon glyphicon-ok"></span></td>
+        </tr>
         </tbody>
     </table>
 </div>
