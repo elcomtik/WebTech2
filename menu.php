@@ -20,7 +20,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li><a href="index.php"><span
+                <li><a href="about.php"><span
                                 class="glyphicon glyphicon-th-list"></span> <?php echo $lang['navbar.about_us']; ?></a>
                 </li>
                 <li><a href="pracovnici.php"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['navbar.staff']; ?></a>
