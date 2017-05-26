@@ -15,7 +15,7 @@ if ($_SESSION['lang'] == 'en') {
 <head>
     <?php include_once 'includes.php'; ?>
     <script rel="script" src="assets/js/content.js"></script>
-    <title>O nás</title>
+    <title>Elektrická motokára</title>
 </head>
 <body>
 <?php
