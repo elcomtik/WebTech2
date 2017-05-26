@@ -32,9 +32,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
     width: 100%;
     <!--text-transform: uppercase;-->
-    background:#fff;
 	background-size: cover;
-	background: url(../../assets/banner.jpg)no-repeat 0px 0px;
 }
 h1,h2,h3,h4{
 	font-family: 'Roboto', sans-serif;
@@ -53,7 +51,7 @@ h1,h2,h3,h4{
     color: #fff;
     font-size: 15px;
     margin-bottom: 5px;
-    background: rgb(83, 22, 30);
+    background: rgb(206, 63, 81);
     padding: 10px;
     font-weight: 500;
 }
@@ -188,6 +186,7 @@ input[type="submit"] {
 	 -webkit-box-shadow: 0px 35px 44px -22px rgba(0,0,0,0.72);
     -moz-box-shadow: 0px 35px 44px -22px rgba(0,0,0,0.72);
     box-shadow: 0px 35px 44px -22px rgba(0,0,0,0.72);
+	background-color: darkgray;
 }
 .right-map-w3-agile ul li {
     font-size: 13px;
