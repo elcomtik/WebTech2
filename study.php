@@ -107,7 +107,7 @@ Možné PVP pre záujemcov o elektroniku
     </li>
 </ul>
 
-    <a href="uploads/studies/SP20172018i.pdf">Kompletný študijný plán pre akademický rok 2017-2018.</a>
+    <a href="uploads/study/SP20172018i.pdf">Kompletný študijný plán pre akademický rok 2017-2018.</a>
 
     <h3>Prijímacie skúšky na inžinierske štúdium</h3>
     <h4>28.6.2017 o 10:00 v D124</h4>
@@ -152,9 +152,9 @@ Možné PVP pre záujemcov o elektroniku
             </ul>
         </li>
     </ul>
-    <a href="uploads/studies/SP20162017b.pdf">Študijný plán 2016-2017</a><br>
-    <a href="uploads/studies/studijny_poriadok.pdf">Študijný poriadok</a><br>
-    <a href="uploads/studies/klasifikacna_stupnica.pdf">Klasifikačná stupnica</a><br>
+    <a href="uploads/study/SP20162017b.pdf">Študijný plán 2016-2017</a><br>
+    <a href="uploads/study/studijny_poriadok.pdf">Študijný poriadok</a><br>
+    <a href="uploads/study/klasifikacna_stupnica.pdf">Klasifikačná stupnica</a><br>
     <h3>Bakalárske práce</h3>
     <h4>Pokyny</h4>
     <h4>Ukončovanie predmetov BP1, BP2, BZP</h4>
@@ -232,9 +232,9 @@ Možné PVP pre záujemcov o elektroniku
                 </li>
             </ul>
     </ul>
-    <a href="uploads/studies/SP20162017i.pdf">Študijný plán 2016-2017</a><br>
-    <a href="uploads/studies/studijny_poriadok.pdf">Študijný poriadok</a><br>
-    <a href="uploads/studies/klasifikacna_stupnica.pdf">Klasifikačná stupnica</a><br>
+    <a href="uploads/study/SP20162017i.pdf">Študijný plán 2016-2017</a><br>
+    <a href="uploads/study/studijny_poriadok.pdf">Študijný poriadok</a><br>
+    <a href="uploads/study/klasifikacna_stupnica.pdf">Klasifikačná stupnica</a><br>
     <h3>Diplomové práce</h3>
     <h4>Pokyny</h4>
     <h4>Ukončovanie predmetov DP1, DP2, DP3, DZP</h4>
