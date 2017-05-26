@@ -1,6 +1,6 @@
 <footer class="footer-distributed">
 
-    <div class="row">
+    <div class="row row-no-margin">
 
 
         <div class="footer-left col-lg-4">
