@@ -55,9 +55,9 @@
                                 class="glyphicon glyphicon-check"></span> <?php echo $lang['navbar.activities']; ?><b
                                 class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#"><?php echo $lang['navbar.photos']; ?></a></li>
+                        <li><a href="gallery.php"><?php echo $lang['navbar.photos']; ?></a></li>
                         <li><a href="video.php"><?php echo $lang['navbar.video']; ?></a></li>
-                        <li><a href="#"><?php echo $lang['navbar.media']; ?></a></li>
+                        <li><a href="media.php"><?php echo $lang['navbar.media']; ?></a></li>
                         <li>
                             <a href="#" class="dropdown-toggle"
                                data-toggle="dropdown"><?php echo $lang['navbar.our_websites']; ?><b

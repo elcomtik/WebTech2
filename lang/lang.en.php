@@ -33,6 +33,7 @@ $lang = array(
     'intranet_login.pass' => "Password",
     'intranet_login.login_button' => "Log in",
     'video.video_list' => "List of videos",
+    'galery.galery_list' => "Events",
     'intranet.pedagogy' => 'Pedagogy',
     'intranet.inceptors' => 'Inceptors',
     'intranet.publications' => 'Publications',
