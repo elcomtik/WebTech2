@@ -35,6 +35,7 @@ $lang = array(
     'intranet_login.login_button' => "Prihlásiť",
     'video.video_list' => "Zoznam videií",
     'galery.galery_list' => "Udalosti",
+    'media.media_list' => "Zmienky v médiách",
     'intranet.pedagogy' => 'Pedagogika',
     'intranet.inceptors' => 'Doktorandi',
     'intranet.publications' => 'Publikácie',

@@ -34,6 +34,7 @@ $lang = array(
     'intranet_login.login_button' => "Log in",
     'video.video_list' => "List of videos",
     'galery.galery_list' => "Events",
+    'media.media_list' => "",
     'intranet.pedagogy' => 'Pedagogy',
     'intranet.inceptors' => 'Inceptors',
     'intranet.publications' => 'Publications',
