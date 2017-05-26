@@ -59,12 +59,20 @@ include_once 'menu.php';
 
 <script src="assets/js/slideshow.js"></script>
 
-<div class="row">
+
+<h3 class="mojnadpish3">Čo je to mechatronika</h3>
+<div class="row row-no-margin">
+
+
     <div class="col-lg-offset-2 col-md-6 col-sm-6 col-xs-12 col-lg-4 col">
-        <?php echo file_get_contents('http://loripsum.net/api') ?>
+        Mechatronika predstavuje inžiniersky odbor, ktorý stojí na rozhraní viacerých oblastí výskumu, vývoja a
+        aplikácií. Kombinuje prvky mechaniky, elektroniky, automatizácie a výpočtovej techniky. Typický mechatronický
+        systém príjima pomocou rôznych typov senzorov signály z vonkajšieho prostredia,
     </div>
     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 col">
-        <?php echo file_get_contents('http://loripsum.net/api') ?>
+        ktoré spracuje a transformuje na vykonanie potrebnej sily, pohybu alebo iného typu akčného zásahu. Umožňuje rozšírenie mechanického systému o
+        senzory a mikropočítače. Mechatronický systém je riadený softvérovým vybavením, ktoré je neoddeliteľnou súčasťou
+        produktu a nevyhnutné pre jeho správne fungovanie.
     </div>
 </div>
 
