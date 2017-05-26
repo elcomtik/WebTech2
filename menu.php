@@ -25,7 +25,7 @@
                 </li>
                 <li><a href="pracovnici.php"><span class="glyphicon glyphicon-user"></span> <?php echo $lang['navbar.staff']; ?></a>
                 </li>
-                <li><a href="#"><span class="glyphicon glyphicon-education"></span> <?php echo $lang['navbar.study']; ?>
+                <li><a href="study.php"><span class="glyphicon glyphicon-education"></span> <?php echo $lang['navbar.study']; ?>
                     </a>
                 </li>
                 <li>
@@ -48,7 +48,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> <?php echo $lang['navbar.news']; ?>
+                <li><a href="index.php"><span class="glyphicon glyphicon-envelope"></span> <?php echo $lang['navbar.news']; ?>
                     </a></li>
                 <li>
                     <a href="#" class="dropdown-togglex" data-toggle="dropdown"><span
