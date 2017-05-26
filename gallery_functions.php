@@ -21,6 +21,7 @@ if (isset($_REQUEST['action'])){
 function nacitaj(){
 
     $dir = "uploads/galeria/" . $_REQUEST['dir'] . "/";
+    $tdir = "uploads/galeria/thumb/" . $_REQUEST['dir'] . "/";
 //    echo $dir;
 
     $files = scandir($dir);
@@ -28,8 +29,8 @@ function nacitaj(){
     unset($files[1]);
     foreach ($files as $f){
         echo "<li class=\"col-xs-6 col-sm-4 col-md-3\" data-responsive=\"img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800\" data-src='" . $dir . $f . "'>";
-        echo "<a href=''>";
-        echo "<img class=\"img-responsive\" src='" . $dir . $f . "'/>";
+        echo "<a href='" . $dir . $f . "'>";
+        echo "<img class=\"img-responsive\" src='" . $tdir .  $f . "'/>";
         echo "</a>";
         echo "</li>";
     }

@@ -24,6 +24,7 @@ function nacitajObrazky() {
                 height: '470px',
                 mode: 'lg-fade',
                 addClass: 'fixed-size',
+                thumbnail: true,
                 counter: false,
                 download: false,
                 startClass: '',
