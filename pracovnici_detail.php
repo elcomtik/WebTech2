@@ -41,7 +41,8 @@ include_once 'menu.php';
         while ($row = $result->fetch_assoc()) {
             $staff[] = new Staff($row["ID"], $row['CLASSIFICATION'], $row['DEPARTMENT'], '+421 2 60291 ' . $row['NUMBER'], $row['ROOM'], $row['AIS_ID']);
             echo "<tr>";
-            echo "<td><img src='https://is.stuba.sk/auth/lide/foto.pl?id=" . $row['AIS_ID'] . "'></td>";
+            //echo "<td><img src='https://is.stuba.sk/auth/lide/foto.pl?id=" . $row['AIS_ID'] . "'></td>";
+            echo "<td><img src='uploads/staff_photo/" .$row['AIS_ID']. ".jpg'></td>";
             echo "<td>" . $row['CLASSIFICATION'] . "</td>";
             echo "<td>" . $row['DEPARTMENT'] . "</td>";
             echo "<td>+421 2 60291 " . $row['NUMBER'] . "</td>";
