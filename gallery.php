@@ -19,10 +19,10 @@ include_once 'session.php';
     <script src="assets/lightGallery/js/lg-zoom.js"></script>
     <script src="assets/lightGallery/js/lg-fullscreen.min.js"></script>
     <script src="assets/js/gallery.js"></script>
-    <script src="js/lg-autoplay.js"></script>
-    <script src="js/lg-zoom.js"></script>
-    <script src="js/lg-hash.js"></script>
-    <script src="js/lg-pager.js"></script>
+    <script src="assets/lightGallery/js/lg-autoplay.js"></script>
+    <script src="assets/lightGallery/js/lg-zoom.js"></script>
+    <script src="assets/lightGallery/js/lg-hash.js"></script>
+    <script src="assets/lightGallery/js/lg-pager.js"></script>
 </head>
 <body>
 <?php
