@@ -12,7 +12,7 @@
     <title>Domov</title>
     <link rel="stylesheet" type="text/css" href="assets/css/slideshow.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="js/thesis.js"></script>
+    <script type="text/javascript" src="assets/js/thesis.js"></script>
 
 </head>
 
@@ -20,10 +20,10 @@
 include_once 'session.php';
 ?>
 
-<body>
+<body onload="vypis()">
 <?php
 include_once 'menu.php';
-include_once 'assets/functions/functions_free_thesis.php'
+include 'assets/functions/functions_free_thesis.php'
 ?>
 
 <h3 class="mojnadpish3">Štúdium na našom ústave</h3>
@@ -217,8 +217,8 @@ Voľné témy
 
 
 <!----------------------------------------------------------------------------------------------------------->
-<script>vypis()</script>
 
+<div class="row row-no-margin">
 <div class="col-lg-6">
     <select class="form-control" id="ustav" onchange="vypis()">
         <option value="642">Ústav automobilovej mechatroniky</option>
@@ -231,13 +231,10 @@ Voľné témy
         <option value="356">Ústav robotiky a kybernetiky</option>
     </select>
 
-    <select class="form-control" id="typ" onchange="vypis()">
+    <select class="form-control mojzoznam" id="typ" onchange="vypis()">
         <option value="B">Bakalársky projekt</option>
         <option value="D">Diplomový projekt</option>
     </select>
-
-    Vedúci práce:<input type="text" onkeyup="filtruj()" id="vstup">
-    Odbor:<input type="text" onkeyup="filtruj2()" id="odbor">
 </div>
 
 <div class="col-lg-12">
@@ -248,6 +245,6 @@ Voľné témy
 
 <div id="vysledok"></div>
 
-
+</div>
 <?php include_once 'footer.php' ?>
 </body>

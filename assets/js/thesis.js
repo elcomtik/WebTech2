@@ -9,7 +9,7 @@ function vypis () {
     pole = [];
     //$("#tbody").empty();
     $.post({
-        url:"functions.php",
+        url:"assets/functions/functions_free_thesis.php",
         data:{
             "ustav":$("#ustav").val(),
             "typ":$("#typ").val()
@@ -81,7 +81,7 @@ function filtruj2() {
 function zozbraz_prispevky() {
 
     $.post({
-        url:"functions.php",
+        url:"assets/functions/functions_free_thesis.php",
         data:{
             "login":$("#login").val()
 
