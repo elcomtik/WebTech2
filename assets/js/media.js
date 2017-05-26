@@ -11,5 +11,14 @@ function nacitaj() {
 
     var filename = ($(this).attr('filename'));
     console.log(filename);
+    var url = ($(this).attr('url'));
+    console.log(url);
+    // $("#frame").attr("src", url);
+    if(filename != ""){
+        window.open("uploads/media/" + filename);
+    }else{
+        window.open(url);
+
+    }
 
 }
