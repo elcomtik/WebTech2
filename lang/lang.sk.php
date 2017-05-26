@@ -80,5 +80,5 @@ $lang = array(
     'footer.timetable' => "Rozvrh hodín FEI",
     'footer.country' => "Bratislava, Slovensko",
     'footer.magazine' => "Časopis OKO",
-    'footer.evidence' => "Evidencia publikácií STU"
+    'footer.evidence' => "Evidencia publikácií STU",
 );

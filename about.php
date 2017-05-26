@@ -15,6 +15,11 @@
 
 <?php
 include_once 'session.php';
+
+if ($_SESSION['lang'] == 'en') {
+    header('location: index.php');
+}
+
 ?>
 
 <body>
