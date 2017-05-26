@@ -29,13 +29,13 @@ include_once 'menu.php';
 
     <div class="mySlides fade_slide">
         <div class="numbertext">1 / 2</div>
-        <img src="uploads/banners/banner1.jpg" style="width:100%">
+        <img src="uploads/banners/banner1.jpg" style="width:100%" height="400px">
         <div class="text">Popis</div>
     </div>
 
     <div class="mySlides fade_slide">
         <div class="numbertext">2 / 2</div>
-        <img src="uploads/banners/banner2.jpg" style="width:100%">
+        <img src="uploads/banners/banner2.jpg" style="width:100%" height="400px">
         <div class="text">Popis 2</div>
     </div>
 
@@ -48,7 +48,6 @@ include_once 'menu.php';
 <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
 <script src="assets/js/slideshow.js"></script>
