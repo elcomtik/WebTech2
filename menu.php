@@ -40,10 +40,10 @@
                                data-toggle="dropdown"><?php echo $lang['navbar.research_topics']; ?><b
                                         class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#"><?php echo $lang['navbar.electric_kart']; ?></a></li>
-                                <li><a href="#"><?php echo $lang['navbar.independent_car']; ?></a></li>
-                                <li><a href="#"><?php echo $lang['navbar.led_cube']; ?></a></li>
-                                <li><a href="#"><?php echo $lang['navbar.biomechatronics']; ?></a></li>
+                                <li><a href="kart.php"><?php echo $lang['navbar.electric_kart']; ?></a></li>
+                                <li><a href="car.php"><?php echo $lang['navbar.independent_car']; ?></a></li>
+                                <li><a href="cube.php"><?php echo $lang['navbar.led_cube']; ?></a></li>
+                                <li><a href="biomech.php"><?php echo $lang['navbar.biomechatronics']; ?></a></li>
                             </ul>
                         </li>
                     </ul>
